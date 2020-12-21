@@ -463,9 +463,9 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">Damages</h3>
+                                            <h3 class="nk-block-title page-title">Quotes</h3>
                                             <div class="nk-block-des text-soft">
-                                                <p>You have total 95 Damages.</p>
+                                                <p>You have total 95 Quotes.</p>
                                             </div>
                                         </div><!-- .nk-block-head-content -->
                                     </div><!-- .nk-block-between -->
@@ -483,7 +483,15 @@
                                                                 <div class="form-icon form-icon-right">
                                                                     <em class="icon ni ni-search"></em>
                                                                 </div>
-                                                                <input type="text" class="form-control" id="default-04" placeholder="Insurance Code">
+                                                                <input type="text" class="form-control" id="default-04" placeholder="Damage code">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-control-wrap">
+                                                                <div class="form-icon form-icon-right">
+                                                                    <em class="icon ni ni-search"></em>
+                                                                </div>
+                                                                <input type="text" class="form-control" id="default-04" placeholder="Quote code">
                                                             </div>
                                                         </li>
                                                         <li>
@@ -492,6 +500,14 @@
                                                                     <em class="icon ni ni-search"></em>
                                                                 </div>
                                                                 <input type="text" class="form-control" id="default-04" placeholder="Licence Plate">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="form-control-wrap">
+                                                                <div class="form-icon form-icon-right">
+                                                                    <em class="icon ni ni-search"></em>
+                                                                </div>
+                                                                <input type="text" class="form-control" id="default-04" placeholder="Insurance Plate">
                                                             </div>
                                                         </li>
                                                         <li>
@@ -538,7 +554,7 @@
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li class="nk-block-tools-opt"><a href="html/pages/damages/create.html" class="btn btn-primary"><em class="icon ni ni-plus"></em><span>Add Damage</span></a></li>
+                                                        <li class="nk-block-tools-opt"><a href="html/pages/quotes/create.html" class="btn btn-primary"><em class="icon ni ni-plus"></em><span>Add Quote</span></a></li>
                                                     </ul>
                                                 </div>
                                             </div><!-- .toggle-wrap -->
@@ -553,6 +569,8 @@
                                                         <label class="custom-control-label" for="pid-all"></label>
                                                     </div>
                                                 </th>
+                                                <th class="nk-tb-col"><span class="sub-text">Damage Code</span></th>
+                                                <th class="nk-tb-col"><span class="sub-text">Quote Code</span></th>
                                                 <th class="nk-tb-col"><span class="sub-text">Insurance Code</span></th>
                                                 <th class="nk-tb-col tb-col-lg"><span class="sub-text">Licence Plate</span></th>
                                                 <th class="nk-tb-col tb-col-lg"><span class="sub-text">Vehicle Type</span></th>
@@ -565,7 +583,7 @@
                                                         <a href="#" class="btn btn-xs btn-trigger btn-icon dropdown-toggle mr-n1" data-toggle="dropdown" data-offset="0,5"><em class="icon ni ni-more-h"></em></a>
                                                         <div class="dropdown-menu dropdown-menu-right">
                                                             <ul class="link-list-opt no-bdr">
-                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Remove Damages</span></a></li>
+                                                                <li><a href="#"><em class="icon ni ni-trash"></em><span>Remove Quotes</span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -581,12 +599,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-purple"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 1</h6>
+                                                            <h6 class="title">Damage 1</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -613,9 +637,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -631,12 +657,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-info"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 2</h6>
+                                                            <h6 class="title">Damage 2</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -663,9 +695,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -681,12 +715,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-warning"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 3</h6>
+                                                            <h6 class="title">Damage 3</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -713,9 +753,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -731,12 +773,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-danger"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 4</h6>
+                                                            <h6 class="title">Damage 4</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -763,9 +811,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -781,12 +831,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-purple"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 5</h6>
+                                                            <h6 class="title">Damage 5</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -813,9 +869,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -831,12 +889,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-info"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 6</h6>
+                                                            <h6 class="title">Damage 6</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -863,9 +927,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -881,12 +947,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-warning"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 7</h6>
+                                                            <h6 class="title">Damage 7</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -913,9 +985,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -931,12 +1005,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-danger"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 8</h6>
+                                                            <h6 class="title">Damage 8</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -963,9 +1043,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -981,12 +1063,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-warning"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 9</h6>
+                                                            <h6 class="title">Damage 9</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -1013,9 +1101,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -1031,12 +1121,18 @@
                                                     </div>
                                                 </td>
                                                 <td class="nk-tb-col">
-                                                    <a href="html/pages/damages/detail.html" class="project-title">
+                                                    <a href="html/pages/quotes/detail.html" class="project-title">
                                                         <div class="user-avatar sq bg-danger"><span>IS</span></div>
                                                         <div class="project-info">
-                                                            <h6 class="title">Insurance 10</h6>
+                                                            <h6 class="title">Damage 10</h6>
                                                         </div>
                                                     </a>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Quote</span>
+                                                </td>
+                                                <td class="nk-tb-col tb-col-lg">
+                                                    <span>Insurance</span>
                                                 </td>
                                                 <td class="nk-tb-col tb-col-lg">
                                                     <span>Licence</span>
@@ -1063,9 +1159,11 @@
                                                                 <a href="#" class="dropdown-toggle btn btn-sm btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
                                                                 <div class="dropdown-menu dropdown-menu-right">
                                                                     <ul class="link-list-opt no-bdr">
-                                                                        <li><a href="html/pages/damages/detail.html"><em class="icon ni ni-eye"></em><span>View Damage</span></a></li>
-                                                                        <li><a href="html/pages/damages/update.html"><em class="icon ni ni-edit"></em><span>Update Damage</span></a></li>
-                                                                        <li><a href="#" class="eg-swal-av3"><em class="icon ni ni-trash"></em><span>Delete Damage</span></a></li>
+                                                                        <li><a href="html/pages/quotes/detail.html"><em class="icon ni ni-eye"></em><span>View Quote</span></a></li>
+                                                                        <li><a href="html/pages/quotes/update.html"><em class="icon ni ni-edit"></em><span>Update Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-appr"><em class="icon ni ni-check"></em><span>Approve Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-rej"><em class="icon ni ni-cross"></em><span>Reject Quote</span></a></li>
+                                                                        <li><a href="#" class="eg-swal-del"><em class="icon ni ni-trash"></em><span>Delete Quote</span></a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>

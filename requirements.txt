@@ -51,9 +51,9 @@ Pages::
 #8.4. page to search for damages, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: insurance code, license plate, vehicle type, mechanic code, expert code, vin, status (dropdown)
 9. Quotes
-9.1. create/update
-* fields: damage code, costs, mechanic code, pictures
-9.2. see details
+#9.1. create/update
+#* fields: damage code, costs, mechanic code, pictures
+#9.2. see details
 9.3. page for a confirmation of the deletion
 9.4. page for a confirmation of the approval/rejection
 9.5. page to search for quotes, search results displayed in a table under the fields, fields for search should be horizontal
