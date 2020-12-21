@@ -8,10 +8,10 @@ Pages::
 #2.3. page for a confirmation of the deletion of an insurance
 #2.4. page to search for insurance, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: name, code, status (dropdown)
-3. Insurance employees
+#3. Insurance employees
 #3.1. create/update an insurance
 #* fields: emailAddress, msisdn, password, insurance , name, username
-3.2. see details of an insurance
+#3.2. see details of an insurance
 #3.3. page for a confirmation of the deletion of an insurance
 #3.4. page to search for insurance employee, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: name, code, insurance code, insurance name, status
