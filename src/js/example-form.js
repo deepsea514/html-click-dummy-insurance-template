@@ -6,9 +6,9 @@
         // The configuration we've talked about above
         autoProcessQueue: false,
         uploadMultiple: true,
-        parallelUploads: 100,
-        maxFiles: 100,
-
+        parallelUploads: 3,
+        maxFiles: 5,
+        clickable: true,
         // The setting up of the dropzone
         init: function () {
             var myDropzone = this;
