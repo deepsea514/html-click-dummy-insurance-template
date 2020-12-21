@@ -463,86 +463,78 @@
                                 <div class="nk-block-head nk-block-head-sm">
                                     <div class="nk-block-between g-3">
                                         <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">Insurances / <strong class="text-primary small">Dashlite Development</strong> / Update</h3>
+                                            <h3 class="nk-block-title page-title">Insurances / Employees / <strong class="text-primary">Employee 1</strong> / Update</h3>
                                         </div>
                                         <div class="nk-block-head-content">
-                                            <a href="html/pages/insurances/search.html" class="btn btn-outline-light bg-white d-none d-sm-inline-flex"><em class="icon ni ni-arrow-left"></em><span>Back</span></a>
-                                            <a href="html/pages/insurances/search.html" class="btn btn-icon btn-outline-light bg-white d-inline-flex d-sm-none"><em class="icon ni ni-arrow-left"></em></a>
+                                            <a href="html/pages/insurances/search-employee.html" class="btn btn-outline-light bg-white d-none d-sm-inline-flex"><em class="icon ni ni-arrow-left"></em><span>Back</span></a>
+                                            <a href="html/pages/insurances/search-employee.html" class="btn btn-icon btn-outline-light bg-white d-inline-flex d-sm-none"><em class="icon ni ni-arrow-left"></em></a>
                                         </div>
                                     </div>
                                 </div><!-- .nk-block-head -->
                                 <div class="nk-block nk-block-lg">
                                     <div class="nk-block-head">
                                         <div class="nk-block-head-content">
-                                            <h4 class="title nk-block-title">Update Insurance</h4>
+                                            <h4 class="title nk-block-title">Update Insurance / Employee</h4>
                                         </div>
                                     </div>
                                     <div class="card">
                                         <div class="card-inner">
-                                            <form action="html/pages/insurances/search.html" class="form-validate">
+                                            <form action="html/pages/insurances/search-employee.html" class="form-validate">
                                                 <div class="row g-gs">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="fv-user-email">Email Address</label>
+                                                            <div class="form-control-wrap">
+                                                                <input type="text" class="form-control" id="fv-user-email" name="fv-user-email" required value="example@employee1.com">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="fv-user-msisdn">User Msisdn</label>
+                                                            <div class="form-control-wrap">
+                                                                <input type="text" class="form-control" id="fv-user-msisdn" name="fv-user-msisdn" required value="+123456789098765">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="fv-insurance">Insurance</label>
+                                                            <div class="form-control-wrap">
+                                                                <input type="text" class="form-control" id="fv-insurance" name="fv-insurance" required value="Insurance">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="fv-name">Name</label>
+                                                            <div class="form-control-wrap">
+                                                                <input type="text" class="form-control" id="fv-name" name="fv-name" required value="Name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label class="form-label" for="fv-user-name">User Name</label>
                                                             <div class="form-control-wrap">
-                                                                <input type="text" class="form-control" id="fv-user-name" name="fv-user-name" required value="User">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="fv-user-pass">Password</label>
-                                                            <div class="form-control-wrap">
-                                                                <input type="password" class="form-control" id="fv-user-pass" name="fv-user-pass" required value="password">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="fv-company-email">Company Email Address</label>
-                                                            <div class="form-control-wrap">
-                                                                <input type="email" class="form-control" id="fv-company-email" name="fv-company-email" required value="company@example1.com">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="fv-company-name">Company Name</label>
-                                                            <div class="form-control-wrap">
-                                                                <input type="text" class="form-control" id="fv-company-name" name="fv-company-name" required value="Company1">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="fv-company-msisdn">Company Msisdn</label>
-                                                            <div class="form-control-wrap">
-                                                                <input type="text" class="form-control" id="fv-company-msisdn" name="fv-company-msisdn" required value="+123456789098765">
+                                                                <input type="text" class="form-control" id="fv-user-name" name="fv-user-name" required value="Employee1">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6"></div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="form-label" for="fv-employee-email">Employee Email Address</label>
+                                                            <label class="form-label" for="fv-user-pass">Password</label>
                                                             <div class="form-control-wrap">
-                                                                <input type="email" class="form-control" id="fv-employee-email" name="fv-employee-email" required value="employee@example1.com">
+                                                                <input type="password" class="form-control" id="fv-user-pass" name="fv-user-pass" required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="form-label" for="fv-employee-name">Employee Name</label>
+                                                            <label class="form-label" for="fv-user-confirm-pass">Confirm Password</label>
                                                             <div class="form-control-wrap">
-                                                                <input type="text" class="form-control" id="fv-employee-name" name="fv-employee-name" required value="Employee1">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="fv-employee-msisdn">Employee Msisdn</label>
-                                                            <div class="form-control-wrap">
-                                                                <input type="text" class="form-control" id="fv-employee-msisdn" name="fv-employee-msisdn" required value="+123456789098765">
+                                                                <input type="password" class="form-control" id="fv-user-confirm-pass" name="fv-user-confirm-pass" required>
                                                             </div>
                                                         </div>
                                                     </div>
