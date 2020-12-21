@@ -15,20 +15,20 @@ Pages::
 #3.3. page for a confirmation of the deletion of an insurance
 #3.4. page to search for insurance employee, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: name, code, insurance code, insurance name, status
-4. Mechanic
-4.1. create/update a mechanic
-* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
-4.2. see details of a mechanic
-4.3. page for a confirmation of the deletion of a mechanic company
-4.4. page to search for mechanics, search results displayed in a table under the fields, fields for search should be horizontal
-* fields: name, code, status
-5. Mechanic employees
-5.1. create/update a mechanic employee
-* fields: emailAddress, msisdn, password, insurance , name, username
-5.2. see details of a mechanic employee
-5.3. page for a confirmation of the deletion of a mechanic employee
-5.4. page to search for mechanic employee, search results displayed in a table under the fields, fields for search should be horizontal
-* fields: name, code, mechanic employee code, mechanic company name, status
+#4. Mechanic
+#4.1. create/update a mechanic
+#* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
+#4.2. see details of a mechanic
+#4.3. page for a confirmation of the deletion of a mechanic company
+#4.4. page to search for mechanics, search results displayed in a table under the fields, fields for search should be horizontal
+#* fields: name, code, status
+#5. Mechanic employees
+#5.1. create/update a mechanic employee
+#* fields: emailAddress, msisdn, password, insurance , name, username
+#5.2. see details of a mechanic employee
+#5.3. page for a confirmation of the deletion of a mechanic employee
+#5.4. page to search for mechanic employee, search results displayed in a table under the fields, fields for search should be horizontal
+#* fields: name, code, mechanic employee code, mechanic company name, status
 6. Expert
 6.1. create/update
 * fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
