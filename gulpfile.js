@@ -22,7 +22,8 @@ var node_path = '../..';
 function html(cb) {
   src('src/html/**')
     .pipe(dest('dist/html'));
-
+    src('src/index.html')
+    .pipe(dest('dist'));
   cb();
 }
 
