@@ -43,47 +43,47 @@ function scss(cb) {
   cb();
 }
 
-// function js_scripts(cb) {
-//   src(['src/js/*.js','!src/js/bundle.js'])
-//   // .pipe(uglify())                        // If you minify the code.
-//   .pipe(dest('dist/assets/js'));
+function js_scripts(cb) {
+  src(['src/js/*.js','!src/js/bundle.js'])
+  // .pipe(uglify())                        // If you minify the code.
+  .pipe(dest('dist/assets/js'));
 
-//   src(['src/js/charts/*.js'])
-//   // .pipe(uglify())                        // If you minify the code.
-//   .pipe(dest('dist/assets/js/charts'));
+  src(['src/js/charts/*.js'])
+  // .pipe(uglify())                        // If you minify the code.
+  .pipe(dest('dist/assets/js/charts'));
 
-//   src(['src/js/apps/*.js'])
-//   // .pipe(uglify())                        // If you minify the code.
-//   .pipe(dest('dist/assets/js/apps'));
+  src(['src/js/apps/*.js'])
+  // .pipe(uglify())                        // If you minify the code.
+  .pipe(dest('dist/assets/js/apps'));
 
-//   cb();
-// }
+  cb();
+}
 
-// function js_bundle(cb) {
-//   src('src/js/bundle.js')
-//   .pipe(fileinclude({
-//     prefix: '@@',
-//     basepath: '@file',
-//     context: { build: 'dist', nodeRoot: node_path }
-//   }))
-//   .pipe(strip())
-//   .pipe(minify({ minify: true, minifyJS: { sourceMap: false } }))     // Disable, if you dont want to minify bundle file.
-//   .pipe(dest('dist/assets/js'));
+function js_bundle(cb) {
+  src('src/js/bundle.js')
+  .pipe(fileinclude({
+    prefix: '@@',
+    basepath: '@file',
+    context: { build: 'dist', nodeRoot: node_path }
+  }))
+  .pipe(strip())
+  .pipe(minify({ minify: true, minifyJS: { sourceMap: false } }))     // Disable, if you dont want to minify bundle file.
+  .pipe(dest('dist/assets/js'));
 
-//   src(['src/js/libs/**', '!src/js/libs/editors/skins/**'])
-//   .pipe(fileinclude({
-//     prefix: '@@',
-//     basepath: '@file',
-//     context: { build: 'dist', nodeRoot: node_path }
-//   }))
-//   .pipe(strip())
-//   .pipe(minify({ minify: true, minifyJS: { sourceMap: false } }))     // Disable, if you dont want to minify bundle file.
-//   .pipe(dest('dist/assets/js/libs'));
+  src(['src/js/libs/**', '!src/js/libs/editors/skins/**'])
+  .pipe(fileinclude({
+    prefix: '@@',
+    basepath: '@file',
+    context: { build: 'dist', nodeRoot: node_path }
+  }))
+  .pipe(strip())
+  .pipe(minify({ minify: true, minifyJS: { sourceMap: false } }))     // Disable, if you dont want to minify bundle file.
+  .pipe(dest('dist/assets/js/libs'));
 
-//   src('src/js/libs/editors/skins/**').pipe(dest('dist/assets/js/libs/editors/skins'));
+  src('src/js/libs/editors/skins/**').pipe(dest('dist/assets/js/libs/editors/skins'));
 
-//   cb();
-// }
+  cb();
+}
 
 function assets(cb){
   src(['src/images/**'])
@@ -95,20 +95,20 @@ function assets(cb){
   cb();
 }
 
-exports.build = series(html, scss, assets);
+exports.build = series(html, scss, js_scripts, js_bundle, assets);
 
 exports.develop = function() {
     watch(['src/scss/*.scss','src/scss/**'], scss)
     watch(['src/html/*.html','src/html/**/*.html'], html)
     watch(['src/images/**', 'src/assets/**'], assets)
-    // watch(['src/js/*.js','src/js/charts/*.js', 'src/js/apps/*.js', '!src/js/bundle.js'], js_scripts)
-    // watch(['src/js/libs/**','src/js/bundle.js'], js_bundle)
+    watch(['src/js/*.js','src/js/charts/*.js', 'src/js/apps/*.js', '!src/js/bundle.js'], js_scripts)
+    watch(['src/js/libs/**','src/js/bundle.js'], js_bundle)
 };
 
 exports.default = function() {
     watch(['src/scss/*.scss','src/scss/**'], scss)
     watch(['src/html/*.html','src/html/**/*.html'], html)
     watch(['src/images/**', 'src/assets/**'], assets)
-    // watch(['src/js/*.js','src/js/charts/*.js', 'src/js/apps/*.js', '!src/js/bundle.js'], js_scripts)
-    // watch(['src/js/libs/**','src/js/bundle.js'], js_bundle)
+    watch(['src/js/*.js','src/js/charts/*.js', 'src/js/apps/*.js', '!src/js/bundle.js'], js_scripts)
+    watch(['src/js/libs/**','src/js/bundle.js'], js_bundle)
 };

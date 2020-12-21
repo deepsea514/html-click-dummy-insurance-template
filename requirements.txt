@@ -1,0 +1,86 @@
+Pages::
+1. login
+2. Insurance
+2.1. create/update an insurance
+* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
+2.2. see details of an insurance
+2.3. page for a confirmation of the deletion of an insurance
+2.4. page to search for insurance, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: name, code, status (dropdown)
+3. Insurance employees
+3.1. create/update an insurance
+* fields: emailAddress, msisdn, password, insurance , name, username
+3.2. see details of an insurance
+3.3. page for a confirmation of the deletion of an insurance
+3.4. page to search for insurance employee, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: name, code, insurance code, insurance name, status
+4. Mechanic
+4.1. create/update a mechanic
+* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
+4.2. see details of a mechanic
+4.3. page for a confirmation of the deletion of a mechanic company
+4.4. page to search for mechanics, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: name, code, status
+5. Mechanic employees
+5.1. create/update a mechanic employee
+* fields: emailAddress, msisdn, password, insurance , name, username
+5.2. see details of a mechanic employee
+5.3. page for a confirmation of the deletion of a mechanic employee
+5.4. page to search for mechanic employee, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: name, code, mechanic employee code, mechanic company name, status
+6. Expert
+6.1. create/update
+* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
+6.2. see details
+6.3. page for a confirmation of the deletion
+6.4. page to search for experts, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: name, code, insurance code, insurance company, status
+7. Expert employees
+7.1. create/update
+* fields: emailAddress, msisdn, password, insurance , name, username
+7.2. see details
+7.3. page for a confirmation of the deletion
+7.4. page to search for employees, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: name, code, employee code, expert company name, insurance company name, status (drop down)
+8. Damages
+8.1. create/update
+* fields: insurance name, license plate, vehicle Type, notes, mechanic code, export code, mileage, vin, pictures
+8.2. see details
+8.3. page for a confirmation of the deletion
+8.4. page to search for damages, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: insurance code, license plate, vehicle type, mechanic code, expert code, vin, status (dropdown)
+9. Quotes
+9.1. create/update
+* fields: damage code, costs, mechanic code, pictures
+9.2. see details
+9.3. page for a confirmation of the deletion
+9.4. page for a confirmation of the approval/rejection
+9.5. page to search for quotes, search results displayed in a table under the fields, fields for search should be horizontal
+* fields: damage code, quote code, license plate, insurance code, vehicle type, mechanic code, expert code, vin, status
+10. logout
+
+Menu
+Insurances
+|_ Create
+|_ Search
+|_ Employee
+|_ Create
+|_ Search
+Mechanics
+|_ Create
+|_ Search
+|_ Employee
+|_ Create
+|_ Search
+Experts
+|_ Create
+|_ Search
+|_ Employee
+|_ Create
+|_ Search
+Damages
+|_ Create
+|_ Search
+Quotes
+|_ Submit
+|_ Search
