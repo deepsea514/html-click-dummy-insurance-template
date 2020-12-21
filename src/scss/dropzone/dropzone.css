@@ -235,9 +235,14 @@
   min-height: 100px;
   background: white;
   padding: 54px 54px;
+}
+
+.dz-message {
   border: 2px dashed #0087F7;
   border-radius: 5px;
   background: white;
+  min-height: 100px;
+  vertical-align: middle;
 }
 
 .dropzone.dz-clickable {
