@@ -29,20 +29,20 @@ Pages::
 #5.3. page for a confirmation of the deletion of a mechanic employee
 #5.4. page to search for mechanic employee, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: name, code, mechanic employee code, mechanic company name, status
-6. Expert
-6.1. create/update
-* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
-6.2. see details
-6.3. page for a confirmation of the deletion
-6.4. page to search for experts, search results displayed in a table under the fields, fields for search should be horizontal
-* fields: name, code, insurance code, insurance company, status
-7. Expert employees
-7.1. create/update
-* fields: emailAddress, msisdn, password, insurance , name, username
-7.2. see details
-7.3. page for a confirmation of the deletion
-7.4. page to search for employees, search results displayed in a table under the fields, fields for search should be horizontal
-* fields: name, code, employee code, expert company name, insurance company name, status (drop down)
+#6. Expert
+#6.1. create/update
+#* fields: company email address, name, company msisdn, username password, employee msisdn, employee name, employee email address
+#6.2. see details
+#6.3. page for a confirmation of the deletion
+#6.4. page to search for experts, search results displayed in a table under the fields, fields for search should be horizontal
+#* fields: name, code, insurance code, insurance company, status
+#7. Expert employees
+#7.1. create/update
+#* fields: emailAddress, msisdn, password, insurance , name, username
+#7.2. see details
+#7.3. page for a confirmation of the deletion
+#7.4. page to search for employees, search results displayed in a table under the fields, fields for search should be horizontal
+#* fields: name, code, employee code, expert company name, insurance company name, status (drop down)
 8. Damages
 8.1. create/update
 * fields: insurance name, license plate, vehicle Type, notes, mechanic code, export code, mileage, vin, pictures
