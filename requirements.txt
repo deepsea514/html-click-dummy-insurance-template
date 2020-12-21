@@ -43,10 +43,10 @@ Pages::
 #7.3. page for a confirmation of the deletion
 #7.4. page to search for employees, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: name, code, employee code, expert company name, insurance company name, status (drop down)
-8. Damages
+#8. Damages
 #8.1. create/update
 #* fields: insurance name, license plate, vehicle Type, notes, mechanic code, export code, mileage, vin, pictures
-8.2. see details
+#8.2. see details
 #8.3. page for a confirmation of the deletion
 #8.4. page to search for damages, search results displayed in a table under the fields, fields for search should be horizontal
 #* fields: insurance code, license plate, vehicle type, mechanic code, expert code, vin, status (dropdown)
@@ -58,7 +58,7 @@ Pages::
 9.4. page for a confirmation of the approval/rejection
 9.5. page to search for quotes, search results displayed in a table under the fields, fields for search should be horizontal
 * fields: damage code, quote code, license plate, insurance code, vehicle type, mechanic code, expert code, vin, status
-10. logout
+#10. logout
 
 Menu
 Insurances
