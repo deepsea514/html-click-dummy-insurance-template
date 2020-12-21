@@ -14,6 +14,8 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="./assets/css/dashlite.css?ver=2.2.0">
     <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=2.2.0">
+    <link rel="stylesheet" href="./assets/css/dropzone/basic.css?ver=2.2.0">
+    <link rel="stylesheet" href="./assets/css/dropzone/dropzone.css?ver=2.2.0">
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar ">
@@ -547,22 +549,17 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="fv-pics">Pictures</label>
-                                                            <div class="form-control-wrap">
-                                                                <div class="custom-file">
-                                                                    <input type="file" multiple class="custom-file-input" id="fv-pics">
-                                                                    <label class="custom-file-label" for="fv-pics">Choose file</label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
                                                             <button type="submit" class="btn btn-lg btn-primary">Save Informations</button>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </form>
+                                            <form action="/upload" class="dropzone needsclick dz-clickable mt-3" id="demo-upload">
+                                                <div class="dz-message needsclick">
+                                                    <button type="button" class="dz-button">Drop files here or click to upload.</button><br>
+                                                    <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
                                                 </div>
                                             </form>
                                         </div>

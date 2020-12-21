@@ -51,6 +51,13 @@ function scss(cb) {
     .pipe(dest('dist/assets/css/skins'));
 
   cb();
+
+  // DROPZONE
+  src(['src/scss/dropzone/*.css'])
+    // .pipe(sourcemaps.init())               // If you want generate source map.
+    .pipe(dest('dist/assets/css/dropzone'));
+
+  cb();
 }
 
 function js_scripts(cb) {
@@ -137,9 +144,4 @@ exports.default = function () {
   watch(['src/images/**', 'src/assets/**'], assets)
   watch(['src/js/*.js', 'src/js/charts/*.js', 'src/js/apps/*.js', '!src/js/bundle.js'], js_scripts)
   watch(['src/js/libs/**', 'src/js/bundle.js'], js_bundle)
-};
-
-exports.deploy = function () {
-  return src("./dist/**/*")
-    .pipe(deploy())
 };
